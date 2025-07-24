@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מערכת הדוחות - CoupleTrip</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: "Varela Round", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #1a1a1a;
+      padding: 1rem;
+    }
+    nav a {
+      color: #80cbc4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #4db6ac;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    h1, h2 {
+      color: #ffffff;
+    }
+    .dashboard-section {
+      margin-bottom: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ברוכים הבאים למערכת הדוחות של CoupleTrip</h1>
+  </header>
+
+  <nav>
+    <a href="#ceo">דאשבורד מנכ"ל</a>
+    <a href="#service">דאשבורד שירות לקוחות</a>
+    <a href="#sales">דאשבורד מנהל מכירות</a>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>מי אנחנו?</h2>
+      <p>CoupleTrip היא מערכת חכמה לתכנון טיולים רומנטיים. בעזרת ניתוח נתונים, אנו מאפשרים תובנות מדויקות לצוותי הניהול ולמקבלי החלטות.</p>
+    </section>
+
+    <section id="ceo" class="dashboard-section">
+      <h2>דאשבורד מנכ"ל</h2>
+      <p>בדאשבורד זה ניתן לראות מגמות חודשיות, רווחים לפי סוג לינה ואחוזי רווח לפי יעדים, כדי לזהות עונות שיא וקבלת החלטות אסטרטגיות.</p>
+      <img src="dashboard_ceo.png" alt="דאשבורד מנכ"ל">
+    </section>
+
+    <section id="service" class="dashboard-section">
+      <h2>דאשבורד שירות לקוחות</h2>
+      <p>הדאשבורד כולל פילוח ביטולים לפי סיבה וסוג טיול, ניתוח רווחים לפי סוג לינה לחודש מסוים ודמוגרפיה לפי גיל, כדי לשפר את חוויית הלקוח.</p>
+      <img src="dashboard_service.png" alt="דאשבורד שירות לקוחות">
+    </section>
+
+    <section id="sales" class="dashboard-section">
+      <h2>דאשבורד מנהל מכירות</h2>
+      <p>ניתוח דירוגי חופשות לפי יעד ומקום לינה, כולל פילוח לפי סטטוס הטיול, מספק תובנות לשיפור ההצעות והמכירות.</p>
+      <img src="dashboard_sales.png" alt="דאשבורד מנהל מכירות">
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 CoupleTrip | כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>
