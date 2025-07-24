@@ -2,93 +2,127 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מערכת הדוחות - CoupleTrip</title>
+  <title>דאשבורדים Tableau</title>
   <style>
     body {
       background-color: #121212;
-      color: #f0f0f0;
-      font-family: "Varela Round", sans-serif;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
     }
-    header, footer {
-      background-color: #1e1e1e;
-      padding: 1rem 2rem;
+    header, nav, main {
+      padding: 20px;
+    }
+    header {
+      background-color: #1f1f1f;
       text-align: center;
-      border-bottom: 1px solid #333;
     }
     nav {
+      background-color: #242424;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      background-color: #1a1a1a;
-      padding: 1rem;
+      gap: 20px;
     }
     nav a {
-      color: #80cbc4;
+      color: #00bcd4;
       text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
-      color: #4db6ac;
+      text-decoration: underline;
     }
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    section {
+      margin: 30px;
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    h1, h2 {
-      color: #ffffff;
-    }
-    .dashboard-section {
-      margin-bottom: 4rem;
+    iframe, .tableauPlaceholder {
+      width: 100%;
+      height: 80vh;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>ברוכים הבאים למערכת הדוחות של CoupleTrip</h1>
+    <h1>הדאשבורדים של החברה</h1>
+    <p>באתר זה תוכלו לצפות בדוחות ניהוליים לפי מחלקות ולקבל תובנות עסקיות בזמן אמת</p>
   </header>
 
   <nav>
-    <a href="#ceo">דאשבורד מנכ"ל</a>
-    <a href="#service">דאשבורד שירות לקוחות</a>
-    <a href="#sales">דאשבורד מנהל מכירות</a>
+    <a href="#ceo">מנכ"ל</a>
+    <a href="#ops">שירות ותפעול</a>
+    <a href="#sales">מכירות</a>
   </nav>
 
-  <div class="container">
-    <section>
-      <h2>מי אנחנו?</h2>
-      <p>CoupleTrip היא מערכת חכמה לתכנון טיולים רומנטיים. בעזרת ניתוח נתונים, אנו מאפשרים תובנות מדויקות לצוותי הניהול ולמקבלי החלטות.</p>
-    </section>
-
-    <section id="ceo" class="dashboard-section">
+  <main>
+    <section id="ceo">
       <h2>דאשבורד מנכ"ל</h2>
-      <p>בדאשבורד זה ניתן לראות מגמות חודשיות, רווחים לפי סוג לינה ואחוזי רווח לפי יעדים, כדי לזהות עונות שיא וקבלת החלטות אסטרטגיות.</p>
-      <img src="dashboard_ceo.png" alt="דאשבורד מנכ"ל">
+      <p>סקירה רחבה של הביצועים הכלליים כולל הכנסות חודשיות, סוגי לינה ורווח לפי יעד.</p>
+      <div class='tableauPlaceholder' id='viz1753358530742' style='position: relative'>
+        <noscript><a href='#'><img alt='מענה למנכל ' src='https://public.tableau.com/static/images/_1/_17530910226500/sheet6/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='_17530910226500/sheet6' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='language' value='he-IL' />
+        </object>
+      </div>
     </section>
 
-    <section id="service" class="dashboard-section">
-      <h2>דאשבורד שירות לקוחות</h2>
-      <p>הדאשבורד כולל פילוח ביטולים לפי סיבה וסוג טיול, ניתוח רווחים לפי סוג לינה לחודש מסוים ודמוגרפיה לפי גיל, כדי לשפר את חוויית הלקוח.</p>
-      <img src="dashboard_service.png" alt="דאשבורד שירות לקוחות">
+    <section id="ops">
+      <h2>דאשבורד שירות ותפעול</h2>
+      <p>נתונים על ביטולים, סיבת הביטול, פילוח לקוחות וסוגי טיולים.</p>
+      <div class='tableauPlaceholder' id='viz1753358578283' style='position: relative'>
+        <noscript><a href='#'><img alt='מחלקת תפעול ' src='https://public.tableau.com/static/images/_1/_17530910226500/sheet10/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='_17530910226500/sheet10' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='language' value='he-IL' />
+        </object>
+      </div>
     </section>
 
-    <section id="sales" class="dashboard-section">
-      <h2>דאשבורד מנהל מכירות</h2>
-      <p>ניתוח דירוגי חופשות לפי יעד ומקום לינה, כולל פילוח לפי סטטוס הטיול, מספק תובנות לשיפור ההצעות והמכירות.</p>
-      <img src="dashboard_sales.png" alt="דאשבורד מנהל מכירות">
+    <section id="sales">
+      <h2>דאשבורד מכירות</h2>
+      <p>מכירות לפי חודשים, סוגי חדרים, שמות סוכנים ויעדים פופולריים.</p>
+      <div class='tableauPlaceholder' id='viz1753358619661' style='position: relative'>
+        <noscript><a href='#'><img alt='דשבורד למכירות ' src='https://public.tableau.com/static/images/_1/_17530910226500/sheet9/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='_17530910226500/sheet9' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='language' value='he-IL' />
+        </object>
+      </div>
     </section>
-  </div>
+  </main>
 
-  <footer>
-    <p>© 2025 CoupleTrip | כל הזכויות שמורות</p>
-  </footer>
+  <script type='text/javascript'>
+    const scripts = [
+      'viz1753358530742',
+      'viz1753358578283',
+      'viz1753358619661'
+    ];
+
+    scripts.forEach(id => {
+      const divElement = document.getElementById(id);
+      const vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      const scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    });
+  </script>
 </body>
 </html>
